@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  upfront_comp: 1.5
+  trailer: 1.5
+  vendor: MyString
+
+two:
+  name: MyString
+  upfront_comp: 1.5
+  trailer: 1.5
+  vendor: MyString

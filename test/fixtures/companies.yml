@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  ein: 1
+  multiple_locations?: false
+
+two:
+  name: MyString
+  ein: 1
+  multiple_locations?: false

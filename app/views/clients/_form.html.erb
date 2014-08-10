@@ -1,0 +1,85 @@
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :ssn %><br>
+    <%= f.number_field :ssn %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_date %><br>
+    <%= f.date_select :birth_date %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br>
+    <%= f.number_field :company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :influencer? %><br>
+    <%= f.check_box :influencer? %>
+  </div>
+  <div class="field">
+    <%= f.label :decision_maker %><br>
+    <%= f.check_box :decision_maker %>
+  </div>
+  <div class="field">
+    <%= f.label :address_id %><br>
+    <%= f.number_field :address_id %>
+  </div>
+  <div class="field">
+    <%= f.label :location_id %><br>
+    <%= f.number_field :location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile_phone %><br>
+    <%= f.number_field :mobile_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :home_phone %><br>
+    <%= f.number_field :home_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :work_phone %><br>
+    <%= f.number_field :work_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :work_extention %><br>
+    <%= f.number_field :work_extention %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_email %><br>
+    <%= f.text_field :primary_email %>
+  </div>
+  <div class="field">
+    <%= f.label :secondary_email %><br>
+    <%= f.text_field :secondary_email %>
+  </div>
+  <div class="field">
+    <%= f.label :active_employee? %><br>
+    <%= f.check_box :active_employee? %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

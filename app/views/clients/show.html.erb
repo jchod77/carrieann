@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @client.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @client.last_name %>
+</p>
+
+<p>
+  <strong>Ssn:</strong>
+  <%= @client.ssn %>
+</p>
+
+<p>
+  <strong>Birth date:</strong>
+  <%= @client.birth_date %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @client.company_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @client.title %>
+</p>
+
+<p>
+  <strong>Influencer?:</strong>
+  <%= @client.influencer? %>
+</p>
+
+<p>
+  <strong>Decision maker:</strong>
+  <%= @client.decision_maker %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @client.address_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @client.location_id %>
+</p>
+
+<p>
+  <strong>Mobile phone:</strong>
+  <%= @client.mobile_phone %>
+</p>
+
+<p>
+  <strong>Home phone:</strong>
+  <%= @client.home_phone %>
+</p>
+
+<p>
+  <strong>Work phone:</strong>
+  <%= @client.work_phone %>
+</p>
+
+<p>
+  <strong>Work extention:</strong>
+  <%= @client.work_extention %>
+</p>
+
+<p>
+  <strong>Primary email:</strong>
+  <%= @client.primary_email %>
+</p>
+
+<p>
+  <strong>Secondary email:</strong>
+  <%= @client.secondary_email %>
+</p>
+
+<p>
+  <strong>Active employee?:</strong>
+  <%= @client.active_employee? %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
